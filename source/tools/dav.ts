@@ -112,7 +112,7 @@ export function prepareFileFromProps(
         typeof resourceType.collection !== "undefined"
             ? "directory"
             : "file";
-    const filename = decodeHTMLEntities(rawFilename);
+    const filename = rawFilename;
     const stat: FileStat = {
         filename,
         basename: path.basename(filename),
